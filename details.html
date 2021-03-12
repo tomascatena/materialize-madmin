@@ -36,7 +36,7 @@
             <li><a href="posts.html">Posts</a></li>
             <li><a href="categories.html">Categories</a></li>
             <li><a href="comments.html">Comments</a></li>
-            <li class="active"><a href="users.html">Users</a></li>
+            <li><a href="users.html">Users</a></li>
           </ul>
           <!-- Side nav -->
           <ul id="side-nav" class="side-nav">
@@ -73,131 +73,58 @@
       </div>
     </nav>
 
-    <!-- Section: Categories -->
-    <section class="section section-categories grey lighten-4">
+    <!-- Section: Details -->
+    <section class="section section-details grey lighten-4">
       <div class="container">
         <div class="row">
           <div class="col s12">
             <div class="card">
               <div class="card-content">
-                <span class="card-title">Users</span>
-                <table class="striped">
-                  <thead>
-                    <tr>
-                      <th></th>
-                      <th>Name</th>
-                      <th>Email</th>
-                      <th>Registered</th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td width="70">
-                        <img
-                          src="./img/person1.jpg"
-                          alt="Person 1"
-                          class="responsive-img circle"
-                          style="width: 40px; margin-left: 10px"
-                        />
-                      </td>
-                      <td>John Doe</td>
-                      <td>jdoe@gmail.com</td>
-                      <td>Jan, 1 2021</td>
-                      <td>
-                        <a href="details.html" class="btn blue lighten-2"
-                          >Details</a
-                        >
-                      </td>
-                    </tr>
-                    <tr>
-                      <td width="70">
-                        <img
-                          src="./img/person2.jpg"
-                          alt="Person 1"
-                          class="responsive-img circle"
-                          style="width: 40px; margin-left: 10px"
-                        />
-                      </td>
-                      <td>Larry Waters</td>
-                      <td>lwaters@aol.com</td>
-                      <td>Jan, 5 2021</td>
-                      <td>
-                        <a href="details.html" class="btn blue lighten-2"
-                          >Details</a
-                        >
-                      </td>
-                    </tr>
-                    <tr>
-                      <td width="70">
-                        <img
-                          src="./img/person3.jpg"
-                          alt="Person 1"
-                          class="responsive-img circle"
-                          style="width: 40px; margin-left: 10px"
-                        />
-                      </td>
-                      <td>Susan Williams</td>
-                      <td>swill@yahoo.com</td>
-                      <td>Jan, 8 2021</td>
-                      <td>
-                        <a href="details.html" class="btn blue lighten-2"
-                          >Details</a
-                        >
-                      </td>
-                    </tr>
-                    <tr>
-                      <td width="70">
-                        <img
-                          src="./img/person4.jpg"
-                          alt="Person 1"
-                          class="responsive-img circle"
-                          style="width: 40px; margin-left: 10px"
-                        />
-                      </td>
-                      <td>Jeff Burke</td>
-                      <td>jeff.burke@myemail.com</td>
-                      <td>Jan, 10 2021</td>
-                      <td>
-                        <a href="details.html" class="btn blue lighten-2"
-                          >Details</a
-                        >
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="row">
+                  <div class="col s12 m6">
+                    <span class="card-title">Post Details</span>
+                  </div>
+                  <div class="col s12 m6 center">
+                    <img
+                      src="./img/person1.jpg"
+                      alt="Person 1"
+                      class="responsive-img circle"
+                      style="width: 40px; margin-left: 10px"
+                    />
+                    <p>Posted by John Doe</p>
+                    <p>On January 2, 2021</p>
+                  </div>
+                </div>
+                <span class="card-title">Details</span>
+                <form>
+                  <div class="input-field">
+                    <input type="text" id="title" value="Post One" />
+                    <label for="title">Title</label>
+                  </div>
+                  <div class="input-field">
+                    <select>
+                      <option value="" disabled selected>Select Option</option>
+                      <option value="1" selected>Web Development</option>
+                      <option value="2">Graphic Design</option>
+                      <option value="3">Tech Gadgets</option>
+                      <option value="4">Other</option>
+                    </select>
+                    <label>Category</label>
+                  </div>
+                  <div class="input-field">
+                    <textarea
+                      name="body"
+                      id="body"
+                      class="materialize-textarea"
+                    >
+This is the content for post one.</textarea
+                    >
+                  </div>
+                </form>
               </div>
               <div class="card-action">
-                <ul class="pagination" style="margin: auto">
-                  <li class="disabled">
-                    <a href="#!" class="blue-text" style="margin: auto">
-                      <i class="material-icons">chevron_left</i>
-                    </a>
-                  </li>
-                  <li class="active blue lighten-2">
-                    <a href="#!" class="white-text" style="margin: auto">1</a>
-                  </li>
-                  <li class="waves-effect">
-                    <a href="#!" class="blue-text" style="margin: auto">2</a>
-                  </li>
-                  <li class="waves-effect">
-                    <a href="#!" class="blue-text" style="margin: auto">3</a>
-                  </li>
-                  <li class="waves-effect">
-                    <a href="#!" class="blue-text" style="margin: auto">4</a>
-                  </li>
-                  <li class="waves-effect">
-                    <a href="#!" class="blue-text" style="margin: auto">5</a>
-                  </li>
-                  <li class="waves-effect">
-                    <a href="#!" class="blue-text" style="margin: auto">6</a>
-                  </li>
-                  <li class="waves-effect">
-                    <a href="#!" class="blue-text" style="margin: auto">
-                      <i class="material-icons">chevron_right</i>
-                    </a>
-                  </li>
-                </ul>
+                <button class="btn green">Save</button>
+                <button class="btn red">Delete</button>
               </div>
             </div>
           </div>
@@ -219,13 +146,6 @@
         </a>
       </p>
     </footer>
-
-    <!-- Fixed Action Button -->
-    <div class="fixed-action-btn">
-      <a href="#user-modal" class="modal-trigger btn-floating btn-large cyan">
-        <i class="material-icons">add</i>
-      </a>
-    </div>
 
     <!-- Add Post Modal -->
     <div id="post-modal" class="modal" style="height: 1000px">
